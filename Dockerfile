@@ -1,5 +1,6 @@
 FROM alpine:latest
 RUN apk update && \
+  apk add ca-certificates && \
   apk add openssh-client && \
   rm -rf /var/cache/apk/*
 
