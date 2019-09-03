@@ -13,8 +13,8 @@ chmod 700 "$SSHPATH"
 chmod 600 "$SSHPATH/known_hosts"
 chmod 600 "$SSHPATH/deploy_key"
 
-echo $INPUT_COMMAND > $HOME/shell.sh
-echo $INPUT_COMMAND
+echo -e $INPUT_COMMAND > $HOME/shell.sh
+echo -e $INPUT_COMMAND
 cat $HOME/shell.sh
 
 echo Start Run Command
