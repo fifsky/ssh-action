@@ -1,12 +1,30 @@
-name: 'Container Action Template'
-description: 'Get started with Container actions'
-author: 'GitHub'
-inputs: 
-  myInput:
-    description: 'Input to use'
-    default: 'world'
+name: 'Remote SSH Commands'
+description: 'Run remote ssh commands'
+author: 'fifsky@gmail.com'
+inputs:
+  command:
+    description: "Command to execute on the remote server."
+    required: true
+  host:
+    description: "Hostname or IP address of the server."
+    required: false
+    default: "localhost"
+  user:
+    description: "Username for authentication."
+    required: false
+    default: "root"
+  port:
+    description: "Port number of the server."
+    required: false
+    default: "22"
+  key:
+    description: "File Location or string that contains a private key for either key-based or hostbased user authentication (OpenSSH format)"
+    required: true
+
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.myInput }}
+
+branding:
+  color: "pink"
+  icon: "lock"
