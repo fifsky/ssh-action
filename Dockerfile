@@ -1,4 +1,7 @@
-FROM alpine:3.10
+FROM alpine:latest
+RUN apk update && \
+  apk add openssh-client && \
+  rm -rf /var/cache/apk/*
 
 COPY LICENSE README.md /
 
