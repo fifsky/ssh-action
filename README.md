@@ -13,7 +13,7 @@ Simple GitHub Action to run a command on a remote server using SSH. This is work
   uses: fifsky/ssh-action@release
   with:
     command: |
-      cd /tmp
+      cd /tmp &&
       ls -a
     host: ${{ secrets.HOST }}
     user: root
