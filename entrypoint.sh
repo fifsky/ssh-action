@@ -13,8 +13,8 @@ chmod 700 "$SSHPATH"
 chmod 600 "$SSHPATH/known_hosts"
 chmod 600 "$SSHPATH/deploy_key"
 
+#I don't know why command wrap is missing, so I have to use && join command
 echo -e $INPUT_COMMAND > $HOME/shell.sh
-echo -e $INPUT_COMMAND
 cat $HOME/shell.sh
 
 echo Start Run Command

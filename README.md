@@ -20,6 +20,8 @@ Simple GitHub Action to run a command on a remote server using SSH. This is work
     key: ${{ secrets.PRIVATE_KEY}}
 ```
 
+> I don't know why command loses line breaks when it passes into the environment variable, so I have to use && join command
+
 🔐 Set your secrets here: `https://github.com/USERNAME/REPO/settings/secrets`.
 
 Check out [the workflow example](.github/workflows/workflow.yml) for a minimalistic yaml workflow in GitHub Actions.
