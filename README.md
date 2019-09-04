@@ -24,7 +24,7 @@ Simple GitHub Action to run a command on a remote server using SSH. This is work
 
 🔐 Set your secrets here: `https://github.com/USERNAME/REPO/settings/secrets`.
 
-Check out [the workflow example](.github/workflows/workflow.yml) for a minimalistic yaml workflow in GitHub Actions.
+Check out [the workflow example](.github/workflows/test.yml) for a minimalistic yaml workflow in GitHub Actions.
 
 **Result**
 

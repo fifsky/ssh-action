@@ -8,7 +8,7 @@ jobs:
 
     steps:
       - name: ls -a via OPEN SSH Private Key
-        uses: fifsky/ssh-action@master
+        uses: fifsky/ssh-action@v1
         with:
           command: |
             cd /tmp &&
