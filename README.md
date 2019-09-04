@@ -43,6 +43,16 @@ Check out [the workflow example](.github/workflows/workflow.yml) for a minimalis
 - **key** - _string_ - Required, that contains a private key for either key-based or hostbased user authentication (OpenSSH format). **Default:** (none)
 
 
+## Tips
+
+If emitting "mesg: ttyname failed: Inappropriate ioctl for device", You need to modify your Linux files as follows
+
+```
+vim /root/.profile
+// Modify the "mesg n || true"  to "tty -s && mesg n || true"
+```
+
+
 ## Thanks
 
 Documentation and parameters design from:
