@@ -8,10 +8,10 @@ jobs:
 
     steps:
       - name: ls -a via OPEN SSH Private Key
-        uses: fifsky/ssh-action@v1
+        uses: fifsky/ssh-action@master
         with:
           command: |
-            cd /tmp &&
+            cd /tmp
             ls -a
           host: ${{ secrets.HOST }}
           user: root
