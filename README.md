@@ -10,7 +10,7 @@ Simple GitHub Action to run a command on a remote server using SSH. This is work
 
 ```yml
 - name: ls -a via ssh
-  uses: fifsky/ssh-action@v1
+  uses: fifsky/ssh-action@master
   with:
     command: |
       cd /tmp
