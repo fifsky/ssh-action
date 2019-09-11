@@ -1,7 +1,5 @@
-name: Command via SSH
-
+name: test
 on: push
-
 jobs:
   build:
     runs-on: ubuntu-latest

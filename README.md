@@ -1,5 +1,7 @@
 # Remote SSH Commands
 
+![](https://github.com/fifsky/ssh-action/workflows/test/badge.svg)
+
 Simple GitHub Action to run a command on a remote server using SSH. This is working with the latest [GitHub Actions](https://github.com/features/actions).
 
 **⚠️Only support private key**
