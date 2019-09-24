@@ -4,7 +4,7 @@ set -eu
 
 printf '\033[33m Warning: This action does not currently support host verification; verification is disabled. \n \033[0m\n'
 
-SSHPATH="$HOME/.ssh
+SSHPATH="$HOME/.ssh"
 
 if [ ! -d "$SSHPATH" ]
 then
@@ -24,5 +24,5 @@ chmod 600 "$SSHPATH/deploy_key"
 echo "$INPUT_COMMAND" > $HOME/shell.sh
 cat $HOME/shell.sh
 
-echo "Start Run Command"
+echo Start Run Command
 sh -c "ssh -i $SSHPATH/deploy_key -o StrictHostKeyChecking=no -p $INPUT_PORT ${INPUT_USER}@${INPUT_HOST} < $HOME/shell.sh"
