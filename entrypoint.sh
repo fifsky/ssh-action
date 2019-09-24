@@ -24,5 +24,5 @@ chmod 600 "$SSHPATH/deploy_key"
 echo "$INPUT_COMMAND" > $HOME/shell.sh
 cat $HOME/shell.sh
 
-echo Start Run Command
+echo "Start Run Command"
 sh -c "ssh -i $SSHPATH/deploy_key -o StrictHostKeyChecking=no -p $INPUT_PORT ${INPUT_USER}@${INPUT_HOST} < $HOME/shell.sh"
