@@ -25,4 +25,10 @@ echo "$INPUT_COMMAND" > $HOME/shell.sh
 cat $HOME/shell.sh
 
 echo Start Run Command
-sh -c "ssh -i $SSHPATH/deploy_key -o StrictHostKeyChecking=no -p $INPUT_PORT ${INPUT_USER}@${INPUT_HOST} < $HOME/shell.sh"
+
+if [ "$INPUT_PASS" = "" ]
+then
+  sh -c "ssh -i $SSHPATH/deploy_key -o StrictHostKeyChecking=no -p $INPUT_PORT ${INPUT_USER}@${INPUT_HOST} < $HOME/shell.sh"
+else
+  sh -c "sshpass -p $INPUT_PASS -o StrictHostKeyChecking=no -p $INPUT_PORT ${INPUT_USER}@${INPUT_HOST} < $HOME/shell.sh"
+fi
