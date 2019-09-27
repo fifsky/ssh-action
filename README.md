@@ -4,7 +4,7 @@
 
 Simple GitHub Action to run a command on a remote server using SSH. This is working with the latest [GitHub Actions](https://github.com/features/actions).
 
-**⚠️Only support private key**
+⭐️ SSH password are supported from version 0.0.3
 
 ## ✨ Example Usage
 
@@ -40,6 +40,9 @@ Check out [the workflow example](.github/workflows/test.yml) for a minimalistic 
 
 - **key** - _string_ - Required, that contains a private key for either key-based or hostbased user authentication (OpenSSH format). **Default:** (none)
 
+- **pass** - _string_ - Password for authentication. 
+
+> Password and Private Key can only be configured one item
 
 ## Tips
 

@@ -13,5 +13,5 @@ jobs:
             ls -a
           host: ${{ secrets.HOST }}
           user: root
-#          key: ${{ secrets.PRIVATE_KEY}}
-          pass: ${{ secrets.PASS }}
+          key: ${{ secrets.PRIVATE_KEY}}
+#          pass: ${{ secrets.PASS }}
