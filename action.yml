@@ -20,6 +20,9 @@ inputs:
   key:
     description: "File Location or string that contains a private key for either key-based or hostbased user authentication (OpenSSH format)"
     required: true
+  pass:
+    description: "Password for authentication."
+    required: false
 
 runs:
   using: 'docker'
