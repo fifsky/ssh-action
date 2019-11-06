@@ -5,12 +5,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set Env Var
+        env:
+          FIRST_NAME: Mona
       - name: ls -a via OPEN SSH Private Key
         uses: fifsky/ssh-action@master
         with:
           command: |
             cd /tmp
             ls -a
+            echo ${{ jobs.build.steps.env.FIRST_NAME }}
           host: ${{ secrets.HOST }}
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
