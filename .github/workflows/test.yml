@@ -1,23 +1,19 @@
 name: test
 on: push
 jobs:
+  env:
+    FIRST_NAME: Mona
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Set Env Var
-        env:
-          FIRST_NAME: Mona
-        run:
-          echo "own:${FIRST_NAME}"
-
       - name: ls -a via OPEN SSH Private Key
         uses: fifsky/ssh-action@master
         with:
           command: |
             cd /tmp
             ls -a
-            echo "prev:${{ job.env.FIRST_NAME }}"
+            echo "${ FIRST_NAME }"
           host: ${{ secrets.HOST }}
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
