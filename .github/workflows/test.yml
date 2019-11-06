@@ -1,11 +1,10 @@
 name: test
 on: push
 jobs:
-  env:
-    FIRST_NAME: Mona
   build:
     runs-on: ubuntu-latest
-
+    env:
+      FIRST_NAME: Mona
     steps:
       - name: ls -a via OPEN SSH Private Key
         uses: fifsky/ssh-action@master
