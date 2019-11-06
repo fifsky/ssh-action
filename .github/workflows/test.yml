@@ -16,7 +16,7 @@ jobs:
           command: |
             cd /tmp
             ls -a
-            echo "prev:${{ jobs.build.steps.env.FIRST_NAME }}"
+            echo "prev:${{ job.env.FIRST_NAME }}"
           host: ${{ secrets.HOST }}
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
