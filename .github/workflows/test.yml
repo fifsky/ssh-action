@@ -9,7 +9,9 @@ jobs:
         env:
           FIRST_NAME: Mona
         run:
-          echo "own:${{ job.steps.env.FIRST_NAME }}"
+          echo "own:${{ job.env.FIRST_NAME }}"
+          echo "own:${FIRST_NAME}"
+
       - name: ls -a via OPEN SSH Private Key
         uses: fifsky/ssh-action@master
         with:
@@ -17,6 +19,7 @@ jobs:
             cd /tmp
             ls -a
             echo "prev:${{ job.steps.env.FIRST_NAME }}"
+            echo "prev:${FIRST_NAME}"
           host: ${{ secrets.HOST }}
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
