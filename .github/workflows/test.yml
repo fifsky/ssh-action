@@ -13,7 +13,7 @@ jobs:
           command: |
             cd /tmp
             ls -a
-            echo "env_var:${{FIRST_NAME}}"
+            echo "env_var:$FIRST_NAME"
           host: ${{ secrets.HOST }}
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
