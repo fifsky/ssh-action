@@ -18,4 +18,4 @@ jobs:
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
 #          pass: ${{ secrets.PASS }}
-          args: "-tt"
+#          args: "-tt"
