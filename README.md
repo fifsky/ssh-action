@@ -49,12 +49,11 @@ Check out [the workflow example](.github/workflows/test.yml) for a minimalistic 
 
 If you need to add some extra SSH parameters, you can setting the args option.
 
-For example, add `-tt` parameter to slove:
+For example, add `-tt` parameter to slove: https://github.com/fifsky/ssh-action/issues/4
 
 ```
 Pseudo-terminal will not be allocated because stdin is not a terminal.
 ```
-https://github.com/fifsky/ssh-action/issues/4
 
 ## Tips
 
