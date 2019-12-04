@@ -23,6 +23,9 @@ inputs:
   pass:
     description: "Password for authentication."
     required: false
+  args:
+    description: "SSH parameters for example: -tt."
+    required: false
 
 runs:
   using: 'docker'
