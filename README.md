@@ -42,7 +42,19 @@ Check out [the workflow example](.github/workflows/test.yml) for a minimalistic 
 
 - **pass** - _string_ - Password for authentication. 
 
+- **args** - _string_ - SSH parameters for example: -tt.
+
 > Password and Private Key can only be configured one item
+
+
+If you need to add some extra SSH parameters, you can setting the args option.
+
+For example, add `-tt` parameter to slove:
+
+```
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+```
+https://github.com/fifsky/ssh-action/issues/4
 
 ## Tips
 
