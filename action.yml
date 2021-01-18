@@ -18,8 +18,11 @@ inputs:
     required: false
     default: "22"
   key:
-    description: "File Location or string that contains a private key for either key-based or hostbased user authentication (OpenSSH format)"
-    required: true
+    description: "String that contains a private key for either key-based or hostbased user authentication (OpenSSH format)"
+    required: false
+  keyfile:
+    description: "File location to an identity file"
+    required: false
   pass:
     description: "Password for authentication."
     required: false
