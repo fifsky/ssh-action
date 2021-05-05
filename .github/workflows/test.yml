@@ -1,6 +1,5 @@
 name: test
 on: push
-
 env:
   FIRST_NAME: Mona
 jobs:
