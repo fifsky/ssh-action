@@ -12,7 +12,7 @@ inputs:
   user:
     description: "Username for authentication."
     required: false
-    default: "root"
+    default: "HOST"
   port:
     description: "Port number of the server."
     required: false
