@@ -15,7 +15,7 @@ jobs:
             ls -a
             echo "env_var:$FIRST_NAME"
           host: ${{ secrets.HOST }}
-          user: root
+          user: ubuntu
           key: ${{ secrets.PRIVATE_KEY}}
 #          pass: ${{ secrets.PASS }}
           args: "-tt -vvv"
