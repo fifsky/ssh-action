@@ -70,3 +70,5 @@ vim /root/.profile
 
 Documentation and parameters design from:
 https://github.com/garygrossgarten/github-action-ssh
+
+test exit error
