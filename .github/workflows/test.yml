@@ -17,6 +17,7 @@ jobs:
             cd /tmp
             ls -a
             echo "env_var:$FIRST_NAME"
+            exit 1
           host: ${{ secrets.HOST }}
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
