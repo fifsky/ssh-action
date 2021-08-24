@@ -23,4 +23,4 @@ jobs:
           args: "-tt"
       - name: Check on failures
         if: ${{ failure() }}
-        run: echo fail
+        run: echo "must fail"
