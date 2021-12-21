@@ -15,7 +15,7 @@ jobs:
             cd /tmp
             ls -a
             echo "env_var:$FIRST_NAME"
-            notcommand
+            echo "test"
           host: ${{ secrets.HOST }}
           user: root
           key: ${{ secrets.PRIVATE_KEY}}
